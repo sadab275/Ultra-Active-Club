@@ -1,0 +1,81 @@
+[
+    {
+        "id": 1,
+        "title": "Guitar",
+        "time": 30,
+        "desc": "The guitar is a fretted musical instrument that typically has six strings. It is usually held flat against the player's body and played by strumming or ",
+        "age": "15-25",
+        "icon": "images/guitar.jpg",
+        "shop": "adids"
+    },
+    {
+        "id": 2,
+        "title": "Piano",
+        "time": 30,
+        "desc": "The guitar is a fretted musical instrument that typically has six strings. It is usually held flat against the player's body and played by strumming or ",
+        "age": "15-25",
+        "icon": "images/piano.jpg",
+        "shop": "adids"
+    },
+    {
+        "id": 3,
+        "title": "Drum",
+        "time": 30,
+        "desc": "The guitar is a fretted musical instrument that typically has six strings. It is usually held flat against the player's body and played by strumming or ",
+        "age": "15-25",
+        "icon": "images/drum.jpg",
+        "shop": "adids"
+    },
+    {
+        "id": 4,
+        "title": "Ukulele",
+        "time": 30,
+        "desc": "The guitar is a fretted musical instrument that typically has six strings. It is usually held flat against the player's body and played by strumming or ",
+        "age": "15-25",
+        "icon": "images/ukulele.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Trumpet",
+        "time": 30,
+        "desc": "The guitar is a fretted musical instrument that typically has six strings. It is usually held flat against the player's body and played by strumming or ",
+        "age": "15-25",
+        "icon": "images/trumpet.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Flute",
+        "time": 30,
+        "desc": "The guitar is a fretted musical instrument that typically has six strings. It is usually held flat against the player's body and played by strumming or ",
+        "age": "15-25",
+        "icon": "images/flute.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Guitar",
+        "time": 30,
+        "desc": "The guitar is a fretted musical instrument that typically has six strings. It is usually held flat against the player's body and played by strumming or ",
+        "age": "15-25"
+    },
+    {
+        "id": 8,
+        "title": "Guitar",
+        "time": 30,
+        "desc": "The guitar is a fretted musical instrument that typically has six strings. It is usually held flat against the player's body and played by strumming or ",
+        "age": "15-25"
+    },
+    {
+        "id": 9,
+        "title": "Guitar",
+        "time": 30,
+        "desc": "The guitar is a fretted musical instrument that typically has six strings. It is usually held flat against the player's body and played by strumming or ",
+        "age": "15-25"
+    },
+    {
+        "id": 10,
+        "title": "Guitar",
+        "time": 30,
+        "desc": "The guitar is a fretted musical instrument that typically has six strings. It is usually held flat against the player's body and played by strumming or ",
+        "age": "15-25"
+    }
+]

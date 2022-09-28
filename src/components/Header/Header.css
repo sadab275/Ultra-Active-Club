@@ -1,0 +1,20 @@
+.icon-img {
+    width: 85px;
+    margin-top: 50px;
+    height: 75px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    margin-top: 45px;
+    margin-left: 20px;
+    color: cadetblue;
+}
+
+.select-music {
+    color: rgb(11, 26, 54);
+}
