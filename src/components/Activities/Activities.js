@@ -10,6 +10,10 @@ const Activities = () => {
             .then(res => res.json())
             .then(data => setInstruments(data))
     }, [])
+
+    const handleClick = (instrument) => {
+        console.log(instrument);
+    }
     return (
         <div className='activities-container'>
             <div className='cart-container'>
@@ -17,6 +21,7 @@ const Activities = () => {
                     instruments.map(instrument => <Instrument
                         key={instrument.id}
                         instrument={instrument}
+                        handleClick={handleClick}
                     ></Instrument>)
                 }
             </div>
