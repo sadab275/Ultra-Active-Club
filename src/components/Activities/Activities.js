@@ -5,6 +5,7 @@ import './Activities.css';
 
 const Activities = () => {
     const [instruments, setInstruments] = useState([]);
+    const [acti, setActi] = useState([]);
     useEffect(() => {
         fetch('records.json')
             .then(res => res.json())
@@ -13,6 +14,8 @@ const Activities = () => {
 
     const handleClick = (instrument) => {
         console.log(instrument);
+        const newActi = [...acti, instrument];
+        setActi(newActi);
     }
     return (
         <div className='activities-container'>
@@ -27,6 +30,7 @@ const Activities = () => {
             </div>
             <div className='exercise-container'>
                 <h2>This is for exercise</h2>
+                <p>Selected {acti.length}</p>
             </div>
         </div>
     );
