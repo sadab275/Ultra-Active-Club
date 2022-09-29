@@ -69,7 +69,7 @@ const Exercise = (props) => {
             </div>
             <div className='time-show-break'>
                 <h3>Break time</h3>
-                <p>{off}</p>
+                <p>{off} Seconds</p>
             </div>
             <button onClick={notify} className='completed-btn'>Activity Completed</button>
 
