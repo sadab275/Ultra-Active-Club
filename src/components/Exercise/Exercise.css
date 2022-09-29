@@ -1,3 +1,8 @@
+.exercise {
+    position: sticky;
+    top: 0;
+}
+
 .perso-name {
     display: flex;
 }

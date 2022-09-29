@@ -2,11 +2,16 @@ import React from 'react';
 import './Exercise.css';
 
 const Exercise = (props) => {
+    const { acti } = props;
+    let total = 0;
+    for (const role of acti) {
+        total = total + role.time;
+    }
     return (
-        <div>
+        <div className='exercise'>
             <div>
                 <h4>Exercise addedr</h4>
-                <p>Selected: {props.acti.length}</p>
+                <p>Selected: {acti.length}</p>
             </div>
 
             <div className='perso-name'>
@@ -36,26 +41,19 @@ const Exercise = (props) => {
                     <p>Age</p>
                 </div>
 
-
-
-
-
-
-
-
             </div>
             <h2>Add a break</h2>
             <div className='break-btn-container'>
-                <button className='break-btn'>10s</button>
-                <button className='break-btn'>20s</button>
-                <button className='break-btn'>30s</button>
-                <button className='break-btn'>40s</button>
+                <button className='break-btn'><span>10</span>s</button>
+                <button className='break-btn'><span>20</span>s</button>
+                <button className='break-btn'><span>30</span>s</button>
+                <button className='break-btn'><span>40</span>s</button>
 
             </div>
             <h2>Exercise Details</h2>
             <div className='time-show-exercise'>
                 <h3>Exercise time</h3>
-                <p>Seconds</p>
+                <p>{total} Seconds</p>
             </div>
             <div className='time-show-break'>
                 <h3>Break time</h3>
