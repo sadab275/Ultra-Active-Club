@@ -1,0 +1,41 @@
+.perso-name {
+    display: flex;
+}
+
+.perso-name img {
+    width: 105px;
+    height: 105px;
+    border-radius: 85px;
+    margin-right: 15px;
+
+}
+
+.perso-infor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.info-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.perso-info {
+    margin-left: 15px;
+
+}
+
+.break-btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.break-btn {
+    width: 75px;
+    border-radius: 15px;
+}
+
+.break-btn:hover {
+    color: blue;
+    background-color: yellow;
+}

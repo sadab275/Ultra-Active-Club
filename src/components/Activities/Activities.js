@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Exercise from '../Exercise/Exercise';
 import Instrument from '../Instrument/Instrument';
 import './Activities.css';
 
@@ -29,8 +30,8 @@ const Activities = () => {
                 }
             </div>
             <div className='exercise-container'>
-                <h2>This is for exercise</h2>
-                <p>Selected {acti.length}</p>
+                <Exercise acti={acti}></Exercise>
+
             </div>
         </div>
     );

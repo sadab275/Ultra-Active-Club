@@ -1,5 +1,5 @@
 .instrument {
-    width: 300px;
+    width: 270px;
     height: 450px;
     border: 1px solid #3498db;
     border-radius: 8px;
@@ -7,7 +7,7 @@
 }
 
 .instrument img {
-    width: 300px;
+    width: 270px;
     height: 145px;
     border-radius: 8px;
 }
