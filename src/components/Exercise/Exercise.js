@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Exercise.css';
 import { ToastContainer, toast } from 'react-toastify';
 
 const Exercise = (props) => {
+    const [off, setOff] = useState([]);
     const { acti } = props;
+
+    const breakClick = (e) => {
+
+        console.log(e.target.innerText);
+        const newSetC = [e.target.innerText];
+        setOff(newSetC);
+    }
+
+
     let total = 0;
     for (const role of acti) {
         total = total + role.time;
@@ -46,10 +56,10 @@ const Exercise = (props) => {
             </div>
             <h2>Add a break</h2>
             <div className='break-btn-container'>
-                <button className='break-btn'><span>10</span>s</button>
-                <button className='break-btn'><span>20</span>s</button>
-                <button className='break-btn'><span>30</span>s</button>
-                <button className='break-btn'><span>40</span>s</button>
+                <button onClick={(e) => breakClick(e)} className='break-btn'><span>10</span>s</button>
+                <button onClick={(e) => breakClick(e)} className='break-btn'><span>20</span>s</button>
+                <button onClick={(e) => breakClick(e)} className='break-btn'><span>30</span>s</button>
+                <button onClick={(e) => breakClick(e)} className='break-btn'><span>40</span>s</button>
 
             </div>
             <h2>Exercise Details</h2>
@@ -59,7 +69,7 @@ const Exercise = (props) => {
             </div>
             <div className='time-show-break'>
                 <h3>Break time</h3>
-                <p>Seconds</p>
+                <p>{off}</p>
             </div>
             <button onClick={notify} className='completed-btn'>Activity Completed</button>
 
