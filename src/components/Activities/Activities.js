@@ -7,11 +7,13 @@ import './Activities.css';
 const Activities = () => {
     const [instruments, setInstruments] = useState([]);
     const [acti, setActi] = useState([]);
+
     useEffect(() => {
         fetch('records.json')
             .then(res => res.json())
             .then(data => setInstruments(data))
     }, [])
+
 
     const handleClick = (instrument) => {
         console.log(instrument);
@@ -30,6 +32,7 @@ const Activities = () => {
                 }
             </div>
             <div className='exercise-container'>
+
                 <Exercise acti={acti}></Exercise>
 
             </div>

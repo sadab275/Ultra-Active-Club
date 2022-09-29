@@ -1,5 +1,6 @@
 import React from 'react';
 import './Exercise.css';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Exercise = (props) => {
     const { acti } = props;
@@ -7,6 +8,7 @@ const Exercise = (props) => {
     for (const role of acti) {
         total = total + role.time;
     }
+    const notify = () => toast("Woww Activity Completed!");
     return (
         <div className='exercise'>
             <div>
@@ -59,8 +61,9 @@ const Exercise = (props) => {
                 <h3>Break time</h3>
                 <p>Seconds</p>
             </div>
-            <button className='completed-btn'>Activity Completed</button>
+            <button onClick={notify} className='completed-btn'>Activity Completed</button>
 
+            <ToastContainer />
         </div>
     );
 };
