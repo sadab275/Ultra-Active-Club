@@ -53,6 +53,15 @@ const Exercise = (props) => {
 
             </div>
             <h2>Exercise Details</h2>
+            <div className='time-show-exercise'>
+                <h3>Exercise time</h3>
+                <p>Seconds</p>
+            </div>
+            <div className='time-show-break'>
+                <h3>Break time</h3>
+                <p>Seconds</p>
+            </div>
+            <button className='completed-btn'>Activity Completed</button>
 
         </div>
     );
