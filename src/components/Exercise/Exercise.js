@@ -22,8 +22,8 @@ const Exercise = (props) => {
     return (
         <div className='exercise'>
             <div>
-                <h4>Exercise addedr</h4>
-                <p>Selected: {acti.length}</p>
+                {/* <h4>Exercise addedr</h4>
+                <p>Selected: {acti.length}</p> */}
             </div>
 
             <div className='perso-name'>
